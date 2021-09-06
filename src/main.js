@@ -13,6 +13,12 @@ import FastClick from "fastclick";
 // 图片懒加载：图片需要显示在可视屏幕上时，才去加载图片
 import VueLazyLoad from "vue-lazyload";
 
+// 引入 Vant 组件库
+import Vant from "vant";
+import "vant/lib/index.css";
+// 挂载 vant 组件库
+Vue.use(Vant);
+
 Vue.config.productionTip = false;
 
 // 添加事件总线对象
