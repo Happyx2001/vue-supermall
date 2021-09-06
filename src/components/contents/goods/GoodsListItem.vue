@@ -27,8 +27,11 @@ export default {
     // 通过计算属性 判断：图片所在的位置
     // 1. 主页Home中获取的数据的图片位置为：.show.img
     // 2. 详情页Detail中获取的数据的图片位置为：.images
+    // 3. 分类页category中获取数据图片位置为 .img
     showImage() {
-      return this.goodsItem.image || this.goodsItem.show.img;
+      return (
+        this.goodsItem.img || this.goodsItem.image || this.goodsItem.show.img
+      );
     },
   },
   methods: {

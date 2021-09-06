@@ -1,4 +1,5 @@
 // 导入axios
+// 封装 axios
 import axios from "axios";
 
 export function request(config) {

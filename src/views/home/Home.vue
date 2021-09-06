@@ -19,7 +19,7 @@
       @scrollPosition="contentPosition"
       :pull-up-load="true"
       @pullingUp="loadMore"
-    > 
+    >
       <!-- 使用HomeSwiper组件 -->
       <home-swiper
         :banners="banners"
@@ -151,7 +151,7 @@ export default {
           this.currentType = "new";
           break;
         case 2:
-          this.currentType = "sell"; 
+          this.currentType = "sell";
           break;
       }
       // 确保两个 tabControl 的 currentIndex 值是一样的
@@ -230,6 +230,8 @@ export default {
   /* var(--color-tint) 获取basc.css中的 --color-tint 颜色 */
   background-color: var(--color-tint);
   color: white;
+  font-weight: bold;
+  font-size: 18px;
 
   /* 在使用浏览器原生滚动时，防止其随着滚动。 应该设置的样式 */
   /* position: fixed;
